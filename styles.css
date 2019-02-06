@@ -20,7 +20,7 @@ body{
 	height: 100vh;
 	font-family: 'Poppins', sans-serif;
 	font-weight: 400;
-  background-color: #f5f1f2;
+  background-color: #4e6e7d;
   text-align: center;
 }
 
@@ -430,50 +430,55 @@ img {
   }
 }
 
+.projects h2 {
+  color: #f4f1f2;
+}
+
 /* Cards */
 .card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   max-width: 50em;
-  margin: auto auto 2rem auto;
   text-align: center;
+  background-color: #f4f1f2;
+  margin: auto auto 2rem auto;
 }
 
-.title {
-  color: #c1432e;
-  font-size: 18px;
-}
-
-button {
+.card button {
   border: none;
   outline: 0;
-  display: inline-block;
-  padding: 8px;
-  color: #4e6e7d;
-  background-color: #f4f1f2;
+  padding: .8em;
+  color: white;
+  background-color: #000;
   text-align: center;
   cursor: pointer;
   width: 100%;
-  font-size: 18px;
+  font-size: 1.1em;
+}
+
+.card button:hover {
+  opacity: 0.8;
 }
 
 a {
   text-decoration: none;
-  font-size: 22px;
-  color: #2c2c2c;
-}
-
-button:hover, a:hover {
-  background-color: #4e6e7d;
+  font-size: 1.1em;
   color: #f4f1f2;
 }
 
 /* Contact */
 .contact {
-  background-color: #4e6e7d;
+  background-color: #2c2c2c;
   color: #f4f1f2;
-  padding-top: 2em;
-  padding-bottom: 5em;
+  padding-top: 1em;
+  padding-bottom: 2em;
+  clear: left;
 }
 
 .contact p {
   font-size: 1em;
+}
+
+#resume {
+  font-size: 1em;
+  color: #f4f1f2;
 }
