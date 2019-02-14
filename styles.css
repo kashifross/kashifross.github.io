@@ -38,7 +38,8 @@ nav {
 	float: left;
 	padding: 8px 0;
 	margin-left: 70px;
-	margin-top: 8px;
+  margin-top: 8px;
+  max-width: 50px;
 }
 
 .logo a {
@@ -84,7 +85,7 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-  color: #EEA200;
+  color: #c1432e;
 }
 
 /* Mobile Nav */
@@ -92,6 +93,7 @@ nav ul li a:hover {
 @media screen and (max-width: 864px) {
   .logo {
     padding: 0;
+    max-width: 50px;
   }
 
   .nav-wrapper {
@@ -101,7 +103,7 @@ nav ul li a:hover {
     width: 100%;
     height: 100%;
     z-index: -1;
-    background: #f5f1f2;
+    background: #eea200;
     opacity: 0;
     transition: all 0.2s ease;
   }
@@ -314,8 +316,8 @@ h2 {
 
 @media (max-width: 474px) {
   .home-growth {
-    height: 110vh;
-    padding-top: 10vh;
+    height: 120vh;
+    padding-top: 20vh;
     padding-left: 0;
     padding-right: 0;
   }
@@ -350,32 +352,30 @@ img {
 }
 
 /* About */
+.about-container {
+  margin-bottom: 2rem;
+}
+
 .home-about-textbox {
   background-color: white;
-  outline: 2px solid #e59F00;
   color: #2c2c2c;
-  margin: 0 1.6em;
+  margin: 15em 1.6em;
 }
 
 .home-about-textbox h2 {
-  color: #e59F00;
+  color: #c1432e;
   margin-top: 0;
-  font-size: 2rem;
+  font-size: 2.5rem;
   text-align: center;
+  padding-top: 1rem;
 }
 
 .home-about-textbox p {
   text-align: center;
-}
-
-#name {
-  color: #e59F00;
+  padding: 1rem 0;
 }
 
 @media (min-width: 25rem) {
-  h2 {
-    font-size: 2rem;
-  }
 
   .home-about-textbox h2 {
     top: .9em;
@@ -383,10 +383,6 @@ img {
 }
 
 @media (min-width: 60rem) {
-  h2 {
-    font-size: 2.5rem;
-  }
-
   .home-about {
     padding-bottom: 10em;
   }
@@ -398,12 +394,13 @@ img {
   }
 
   .home-about-textbox h2 {
-    font-size: 1.7rem;
+    font-size: 2.5rem;
   }
 }
 
 .projects h2 {
   color: #c1432e;
+  padding-bottom: 1em;
 }
 
 /* Cards */
@@ -420,7 +417,7 @@ img {
   outline: 0;
   padding: .8em;
   color: white;
-  background-color: #000;
+  background-color: #2c2c2c;
   text-align: center;
   cursor: pointer;
   width: 100%;
@@ -433,7 +430,7 @@ img {
 
 a {
   text-decoration: none;
-  font-size: 1.1em;
+  font-size: 1.1rem;
   color: #f4f1f2;
 }
 
