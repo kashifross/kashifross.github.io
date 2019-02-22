@@ -103,7 +103,7 @@ nav ul li a:hover {
     width: 100%;
     height: 100%;
     z-index: -1;
-    background: #eea200;
+    background: #f5f5f5;
     opacity: 0;
     transition: all 0.2s ease;
   }
@@ -246,29 +246,20 @@ nav ul li a:hover {
 }
 
 .left-header-content {
-  text-align: left;
+  text-align: center;
   padding-right: 2rem;
 }
 
 .left-header-content h1 { 
   font-size: 2rem;
   color: #c1432e;
-  font-weight: 400;
 }
 
 .left-header-content span { 
   display: block;
   color: #2c2c2c;
-  font-size: 1.3rem;
+  font-size: 1.6rem;
   font-weight: 400;
-}
-
-.right-header-content h1 {
-  font-size: 1.3rem;
-  font-weight: 400;
-  padding-top: 3.6rem;
-  padding-left: 2rem;
-  color: #2c2c2c;
 }
 
 @media (max-width: 960px) {
@@ -299,7 +290,7 @@ p:last-of-type {
 
 h2 { 
   font-weight: 400;
-  font-size: 2rem;
+  font-size: 3rem;
   text-align: center;
 }
 
@@ -349,67 +340,90 @@ img {
   background: #c1432e;
   border-style: solid;
   border-color: #c1432e;
-  color: #f4f1f2;
+  color: #f5f5f5;
 }
 
 /* About */
 .about-container {
-  margin-bottom: 2rem;
+  min-height: calc(100vh - 65px);
+  padding-top: 1vh;
+  background: #D6EAF2;
+  border-top: 1px solid #d4e8f0;
+  border-bottom: 1px solid #d4e8f0;
+  padding-bottom: 60px;
+}
+
+#avatar {
+  float: left;
+}
+
+#title {
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .home-about-textbox {
-  background-color: white;
   color: #2c2c2c;
-  margin: 15em 1.6em;
+  margin: 0 80px;
 }
 
 .home-about-textbox h2 {
   color: #c1432e;
-  margin-top: 0;
-  font-size: 2.5rem;
+  font-size: 3rem;
   text-align: center;
-  padding-top: 1rem;
 }
 
 .home-about-textbox p {
-  text-align: center;
-  padding: 1rem 0;
+  font-weight: 400;
+  font-size: 1.2rem;
+  text-align: left;
 }
 
-@media (min-width: 25rem) {
+@media (min-device-width: 320px) {
 
   .home-about-textbox h2 {
     text-align: center;
   }
+  
+  #avatar {
+    float: none;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 
-@media (min-width: 60rem) {
-  .home-about {
-    padding-bottom: 10em;
-  }
+
+@media (min-width: 960px) {
 
   .home-about-textbox {
-    padding: 7em;
-    outline-offset: -3.75em;
     text-align: left;
   }
 
-  .home-about-textbox h2 {
-    font-size: 2.5rem;
+  #avatar {
+    float: left;
   }
+
+.home-about-textbox .devicon {
+  font-size: 4rem;
+  color: #2c2c2c;
 }
 
-.projects h2 {
-  color: #c1432e;
-  padding-bottom: 1em;
+.home-about-textbox .icons {
+  text-align: center;
 }
 
 /* Cards */
+.projects h2 {
+  color: #c1432e;
+  padding-bottom: 1rem;
+  font-size: 3rem;
+}
+
 .card {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   max-width: 50em;
   text-align: center;
-  background-color: #f4f1f2;
+  background-color: #f5f5f5;
   margin: auto auto 2rem auto;
 }
 
@@ -432,16 +446,20 @@ img {
 a {
   text-decoration: none;
   font-size: 1.1rem;
-  color: #f4f1f2;
+  color: #f5f5f5;
 }
 
 /* Contact */
 .contact {
-  background-color: #2c2c2c;
-  color: #f4f1f2;
+  background-color: #D6EAF2;
+  color: #2c2c2c;
   padding-top: 1em;
   padding-bottom: 2em;
   clear: left;
+}
+
+.contact h2 { 
+  font-size: 3rem;
 }
 
 .contact p {
@@ -450,5 +468,63 @@ a {
 
 #resume {
   font-size: 1em;
-  color: #f4f1f2;
+  color: blue;
+}
+
+/* Start Contact Form */
+/* input[type=text], input[type=email], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: #c1432e;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #b4412c;
+}
+
+.contact-container {
+  background-color: #D6EAF2;
+  margin: 0 58px;
+}
+
+.column {
+  float: left;
+  width: 50%;
+  margin-top: 6px;
+  padding: 20px;
+  font-size: 1.5rem;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+} */
+/* End Contact Form */
+
+.findme {
+  background-color: #D6EAF2;
+  color: #2c2c2c;
+  padding-top: 2em;
+  padding-bottom: 5em;
+}
+
+.findme p {
+  font-size: 1.3em;
+}
+
+.findme h2 { 
+  font-size: 3rem;
 }
