@@ -374,34 +374,9 @@ img {
 }
 
 .home-about-textbox p {
-  font-weight: 400;
   font-size: 1.2rem;
   text-align: left;
 }
-
-@media (min-device-width: 320px) {
-
-  .home-about-textbox h2 {
-    text-align: center;
-  }
-  
-  #avatar {
-    float: none;
-    margin-left: auto;
-    margin-right: auto;
-  }
-}
-
-
-@media (min-width: 960px) {
-
-  .home-about-textbox {
-    text-align: left;
-  }
-
-  #avatar {
-    float: left;
-  }
 
 .home-about-textbox .devicon {
   font-size: 4rem;
@@ -413,40 +388,40 @@ img {
 }
 
 /* Cards */
-.projects h2 {
+.my-projects h2 {
   color: #c1432e;
-  padding-bottom: 1rem;
   font-size: 3rem;
+  padding-bottom: 1rem;
 }
 
-.card {
+.project-card {
+  background-color: #f5f5f5;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  margin: auto auto 2rem auto;
   max-width: 50em;
   text-align: center;
-  background-color: #f5f5f5;
-  margin: auto auto 2rem auto;
 }
 
-.card .btn {
+.project-card .btn {
+  background-color: #2e2e2e;
   border: none;
-  outline: 0;
-  padding: .8em;
   color: white;
-  background-color: #2c2c2c;
-  text-align: center;
   cursor: pointer;
-  width: 100%;
   font-size: 1.1em;
+  outline: 0;
+  padding: 0.8em;
+  text-align: center;
+  width: 100%;
 }
 
-.card .btn:hover {
+.project-card .btn:hover {
   opacity: 0.8;
 }
 
 a {
-  text-decoration: none;
-  font-size: 1.1rem;
   color: #f5f5f5;
+  font-size: 1.1rem;
+  text-decoration: none;
 }
 
 /* Contact */
@@ -522,9 +497,42 @@ input[type=submit]:hover {
 }
 
 .findme p {
-  font-size: 1.3em;
+  font-size: 1.1rem;
 }
 
 .findme h2 { 
   font-size: 3rem;
+}
+
+@media (min-width: 320px) {
+
+  .home-about-textbox h2 {
+    text-align: center;
+  }
+  
+  #avatar {
+    float: none;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .home-about-textbox p {
+    font-size: 1rem;
+  }
+
+}
+
+@media (min-width: 768px) {
+
+  .home-about-textbox {
+    text-align: left;
+  }
+
+  #avatar {
+    float: left;
+  }
+
+  .home-about-textbox p {
+    font-size: 1.2rem;
+  }
 }
